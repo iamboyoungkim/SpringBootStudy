@@ -14,15 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 // @JsonIgnoreProperties(value={"password"})
-@JsonFilter("UserInfo")
+@JsonFilter("UserInfoV2")
 
-public class User {
-    private int id;
-    private String name;
-    private Date joinDate;
-
-    // @JsonIgnore
-    private String password;
-    // @JsonIgnore
-    private String ssn;
+public class UserV2 extends User {
+    private String grade;
 }
